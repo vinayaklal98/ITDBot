@@ -2,7 +2,7 @@ import yaml
 import re
 import random
 #import webscrap_google
-import gsearch
+from . import gsearch
 questions = []
 answers = []
 
@@ -10,7 +10,7 @@ files = ['ai','botprofile','computers','conversations','emotion','food','gossip'
 
 
 for f in files:
-    url = "./data/english/{}.yml".format(f)
+    url = "./app/data/english/{}.yml".format(f)
     #print(url)
     file = open(url)
     data = yaml.load(file)

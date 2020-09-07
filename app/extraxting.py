@@ -2,7 +2,7 @@ import yaml
 import re
 import random
 #import webscrap_google
-import gsearch
+from . import gsearch
 questions = []
 answers = []
 

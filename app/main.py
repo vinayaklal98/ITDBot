@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-import asking
+from . import asking
 
 response = {"answer":"","name":""}
 
